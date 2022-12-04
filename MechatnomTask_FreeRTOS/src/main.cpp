@@ -34,9 +34,9 @@ void setup()
 
   while (!Serial)
   {
-    ; // wait for serial port to connect. Needed for native USB, on LEONARDO, MICRO, YUN, and other 32u4 based boards.
+    ; 
   }
-  /// - ** bakacagiz..... KULLANMADIK
+  //
   queue = xQueueCreate(10, sizeof(char));
   if (queue == NULL)
   {
@@ -63,7 +63,7 @@ void loop()
 
 //---------------------- TASKS ---------------------//
 
-void DefaultTask(void *pvParameters) // This is a task.
+void DefaultTask(void *pvParameters) // 
 {
   (void)pvParameters;
 
@@ -96,7 +96,7 @@ void DegiskenTask(void *pvParameters)
 
 
       command = Serial.readStringUntil('\n');  
-      command.trim();                          //temizle
+      command.trim();                          // boşluklari temizle
       int commandLength;                       // gelen komutun uzunluğunu alıyorum döngü için
       commandLength = command.length();        // bu değişkene eşitliyorum
       bool inEqual;
@@ -177,7 +177,7 @@ void DegiskenTask(void *pvParameters)
   }
 }
 
-// UART icin interrupt ayarlari
+// 
 /*ISR(USART_RX_vect)
 {
   temp=UDR0;// read the received data byte in temp
