@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../../Rtos_Project_Mechatnom"
+		},
+		{
+			"name": "Mechatnom_FreeRTOS_Project",
+			"path": "../../Mechatnom_FreeRTOS_Project"
+		},
+		{
+			"name": "MechatnomTask_FreeRTOS",
+			"path": ".."
+		}
+	],
+	"settings": {}
+}
